@@ -8,10 +8,10 @@ import org.apache.spark.{SparkContext, SparkConf}
  * Created by hadoop on 2016/12/7.
  *
  * 次程序为监控本地一个目录，如果目录中导入文件，则解析文件，输出WordCount。
- * 未完成
+ * 未完成，貌似只能监控hdfs上的目录
  *
  */
-object SparkStream_fileStream {
+object SparkStream_textFileStream {
 
   def main(args: Array[String]) {
     val conf = new SparkConf().setMaster("local[2]").setAppName("fileStream")
